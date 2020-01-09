@@ -19,7 +19,35 @@ By default the report generator generates the report html, encrypts it, copys ac
 You should see the url of the uploaded document echo'd back on completion.
 
 
+### Setting up the AWS server
 
+    sudo yum install python36 python36-pip
+
+    sudo rm /usr/bin/python
+
+    sudo ln -s /usr/bin/python36 /usr/bin/python
+
+    python -m pip install --user pandas pandas_profiling
+    
+    sudo yum install git
+    
+    [set up ssh keys: ssh-keygen then paste to github]
+    
+    git clone git@github.com:wooduk/profile_gig.git
+    
+    cd profile_gig
+    
+    mkdir -p data/census_test
+    mkdir output
+    
+
+Now start from the top with the actual profiler.
+
+    
+    
+    
+    
+    
 
 
     
